@@ -97,5 +97,15 @@ header > nav + img{
   }
 /* footer */
 footer{
-
+    background-color: var(--LightGrey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+footer ul{
+    list-style: none;
+}
+footer h3, footer p{
+    color: var(--PureWhite);
 }
