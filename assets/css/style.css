@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 body{
@@ -32,18 +32,59 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--CreamWhite);
+    width: fit-content;
 }
 
 Nav{
     background-color: var(--LightGrey);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
+    gap: 2rem;
+    font-size: 1rem;
+    padding-left: 20rem;
+    
 }
 
 li > a{
     text-decoration: none;
+    color: var(--PureWhite);
+    
 }
 
+ul + a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul + a img{
+    width: 2rem;
+    }
 
+nav img{
+    width: 16rem;
+}
+
+nav a:hover {
+    color: var(--MainRed);
+  }
+
+.velkommen{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+
+  }
+  .velkommen p{
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .velkommen h1{
+    grid-column: 2;
+  }
