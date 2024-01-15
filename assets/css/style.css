@@ -76,6 +76,10 @@ nav a:hover {
     color: var(--MainRed);
   }
 
+header > nav + img{
+    max-width: 100%;
+    height: auto;
+}
 .velkommen{
     display: grid;
     grid-template-columns: 1fr 1.3fr 1fr;
