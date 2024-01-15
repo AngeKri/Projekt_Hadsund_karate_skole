@@ -35,6 +35,8 @@ body{
     width: fit-content;
 }
 
+/* header */
+
 Nav{
     background-color: var(--LightGrey);
     display: flex;
@@ -80,6 +82,7 @@ header > nav + img{
     max-width: 100%;
     height: auto;
 }
+/* main */
 .velkommen{
     display: grid;
     grid-template-columns: 1fr 1.3fr 1fr;
@@ -92,3 +95,7 @@ header > nav + img{
   .velkommen h1{
     grid-column: 2;
   }
+/* footer */
+footer{
+
+}
