@@ -34,4 +34,16 @@ body{
     background-color: var(--CreamWhite);
 }
 
+Nav{
+    background-color: var(--LightGrey);
+}
+
+nav > ul{
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+}
+
 
