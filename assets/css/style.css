@@ -189,10 +189,7 @@ width: 4rem;
     background-color: var(--Mainblue);
     border-radius: 50px;
     padding: 1rem;
-    /* display: flex;
-    justify-content: center; */
     width: 80%;
-    text-align: center;
 }
 
 .fep h3{
@@ -206,9 +203,9 @@ width: 4rem;
     padding-top: 1rem;
 }
 .fep li > a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    display: inline-block;
+    margin: 2.2rem;
 }
 
 /* knap */
