@@ -148,3 +148,33 @@ footer li{
 .soMe img{
 width: 4rem;
 }
+
+/* FEP */
+.fep li{
+    border: 5px solid var(--Mainblue);
+    border-radius: 10%;
+}
+.fep ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18rem;
+    list-style: none;
+}
+.fep a{
+    border: 5px solid var(--Mainblue);
+    color: var(--PureWhite);
+    background-color: var(--Mainblue);
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.fep h3{
+    color: var(--Mainblue);
+    text-align: center;
+    padding: 2rem;
+}
+
+.fep img{
+    padding: 3rem;
+}
