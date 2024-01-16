@@ -104,6 +104,7 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     padding: 1rem;
+  
     
 }
 footer ul{
@@ -117,6 +118,30 @@ footer h3, footer p{
 }
 
 footer img{
-    padding-right: 0.6rem;
-    gap: 2rem;
+    padding-right: 1rem;
+   
+}
+
+.pin{
+    
+    position: absolute;
+}
+footer p{
+    padding-left: 2rem;
+    margin: 0;
+}
+footer a{
+    font-size: 1rem;
+}
+footer li{
+    padding: 0.5rem;
+}
+.soMe ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.soMe img{
+width: 4rem;
 }
