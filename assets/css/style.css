@@ -202,3 +202,13 @@ transform: translateX(-50%);
     padding: 1rem;
     width: 80%;
 }
+
+/* Cards */
+.nyhedsbokse{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nyhedbokse > a > img{
+    width: 1000px;
+}
