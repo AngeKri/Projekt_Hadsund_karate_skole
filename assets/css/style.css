@@ -170,30 +170,34 @@ span{
 
 /* Instruktører */
 .senseis ul{
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
+    margin: auto;
    
 }
 
 .senseis li{
     list-style: none;
+    padding: 5em;
+    max-width: 85%;
     /* display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; */
+    justify-content: flex-start; */
 }
 
 .senseis img{
-    width: 505px;
+    width: 100%;
+    height: auto;
 }
 
 .senseis p{
-    /* text-align: start;
-    text-wrap: wrap; */
-    margin-top: auto;
-    margin-bottom: auto;
+    text-align: start;
+    text-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 /* footer */
