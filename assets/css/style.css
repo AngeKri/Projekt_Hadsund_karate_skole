@@ -150,6 +150,9 @@ width: 4rem;
 }
 
 /* FEP */
+.fep{
+    padding: 5rem;
+}
 
 .fep li{
     border: 5px solid var(--Mainblue);
@@ -204,11 +207,19 @@ transform: translateX(-50%);
 }
 
 /* Cards */
-.nyhedsbokse{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.whitebg{
+    background-color: var(--PureWhite);
+    padding: 7rem;
 }
-.nyhedbokse > a > img{
-    width: 1000px;
+.nyheder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+}
+.nyhedsbokse{
+   background-color: #E31E24;
+   width: 400px;
+}
+  
 }
