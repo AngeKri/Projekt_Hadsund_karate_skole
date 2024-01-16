@@ -222,4 +222,6 @@ transform: translateX(-50%);
    width: 400px;
 }
   
+.hero{
+    padding-top: 8.5vh;
 }
