@@ -150,31 +150,55 @@ width: 4rem;
 }
 
 /* FEP */
+
 .fep li{
     border: 5px solid var(--Mainblue);
     border-radius: 10%;
+    width: 400px;
+    height: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
 }
 .fep ul{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 18rem;
     list-style: none;
+    padding: 0;
+    gap: 6rem;
 }
 .fep a{
     border: 5px solid var(--Mainblue);
     color: var(--PureWhite);
     background-color: var(--Mainblue);
-    border-radius: 100%;
+    border-radius: 50px;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: relative; 
+left: 50%;
+transform: translateX(-50%);
 }
 
 .fep h3{
     color: var(--Mainblue);
     text-align: center;
     padding: 2rem;
+    font-size: 26px;
+}
+.fep li img{
+    padding-left: 7rem;
+    padding-top: 1rem;
 }
 
-.fep img{
-    padding: 3rem;
+/* knap */
+.knappen{
+    border: 5px solid var(--Mainblue);
+    color: var(--PureWhite);
+    background-color: var(--Mainblue);
+    border-radius: 50px;
+    padding: 1rem;
+    width: 80%;
 }
