@@ -15,6 +15,8 @@
     --CreamWhite: #EEEDE8;
     --PureWhite: #F5F5F5; 
     --LightGrey: #434242;
+    --Overskrift: 3.5rem;
+    --Undertitel: 1.8rem;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -35,6 +37,7 @@ body{
     max-width: 100%;
 }
 
+
 /* header */
 
 Nav{
@@ -54,13 +57,11 @@ nav > ul{
     gap: 2rem;
     font-size: 1rem;
     padding-left: 20rem;
-    
 }
 
 li > a{
     text-decoration: none;
     color: var(--PureWhite);
-    
 }
 
 ul + a{
@@ -84,25 +85,117 @@ header > nav + img{
     max-width: 100%;
     height: auto;
 }
-/* main */
-.velkommen{
-    display: grid;
-    grid-template-columns: 1fr 1.3fr 1fr;
 
-  }
-  .velkommen p{
+
+/* main */
+
+.velkommen, .VDTR, .Belts, .indmeld, .instruktør{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    padding-bottom: 5rem;
+}
+
+.velkommen p{
     grid-column: 2;
     grid-row: 2;
-  }
-  .velkommen h1{
+}
+.velkommen h1, .VDTR h1, .VDTR article, .knapPOS1, .Belts, .indmeld section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a{
     grid-column: 2;
-  }
- .kontakt{
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
+}
+
+
+.Belts > *{
+    grid-column: 2;
+}
+
+.kontakt{
+    margin: auto;
+    width: 41%;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+/* nyheds eksempel */
+
+.breadcrumb {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    content: ">";
+}
+
+.breadcrumb li a {
+    color: var(--MainRed);
+    text-decoration: none;
+}
+
+.Belts h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.Belts h2{
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+.Belts p:first-child{
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Indmeldelse */
+.indmeld h1{
+    font-size: var(--Overskrift);
+}
+
+.indmeld h3, .indmeld h2{
+    padding-top: 2rem;
+}
+
+span{
+    font-weight: 700;
+}
+
+/* Instruktører */
+.senseis ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+   
+}
+
+.senseis li{
+    list-style: none;
+    /* display: flex;
     flex-direction: column;
- }
+    align-items: center;
+    text-align: center; */
+}
+
+.senseis img{
+    width: 505px;
+}
+
+.senseis p{
+    /* text-align: start;
+    text-wrap: wrap; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /* footer */
 footer{
     background-color: var(--LightGrey);
@@ -111,9 +204,7 @@ footer{
     align-items: flex-start;
     padding: 1.5rem;
     padding-left: 5rem;
-    padding-right: 5rem;
-  
-    
+    padding-right: 5rem;    
 }
 footer ul{
     list-style: none;
@@ -127,11 +218,9 @@ footer h3, footer p{
 
 footer img{
     padding-right: 1rem;
-   
 }
 
 .pin{
-    
     position: absolute;
 }
 footer p{
@@ -157,9 +246,8 @@ width: 4rem;
 
 /* FEP */
 .fep{
-    padding: 5rem;
+    padding: 0rem 5rem 5rem 5rem;
 }
-
 .fep li{
     border: 5px solid var(--Mainblue);
     border-radius: 10%;
@@ -185,16 +273,14 @@ width: 4rem;
     padding: 1rem;
     width: 80%;
 }
-
 .fep h3{
     color: var(--Mainblue);
     text-align: center;
-    padding: 2rem;
+    padding-top: 2rem;
     font-size: 26px;
 }
 .fep li img{
-    padding-left: 7rem;
-    padding-top: 1rem;
+    padding: 2rem 0rem 0rem 7rem;
 }
 .fep li > a{
     text-align: center;
@@ -212,8 +298,18 @@ width: 4rem;
     padding: 1rem;
     width: 20rem;   
     text-decoration: none;
+    text-align: center;
     margin-top: 3rem;
+    
 }
+
+.knapPOS1{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
 
 /* Cards */
 .whitebg{
@@ -226,7 +322,6 @@ width: 4rem;
     flex-direction: row;
     justify-content: center;
     gap: 6rem;
-    padding: 1rem;
     text-align: left;
 }
 .nyhedsbokse{
@@ -245,15 +340,20 @@ width: 4rem;
 }
 .nyhedsbokse h3{
     font-weight: 300;
-    font-size: 14px;
-    padding: 0.5rem;
+    font-size: 20px;
+    padding-left: 0.5rem;
 }
 .nyhedsbokse p{
     padding-left: 0.5rem;
+    margin-top: 0;
+}
+.nyhedtxt{
+    padding: 1rem;
 }
 .nyhedsbokse h4{
-    font-size: 22px;
+    font-size: 30px;
     padding: 0.5rem;
+    
 }
 .whitebg h2{
     text-align: left;
