@@ -42,6 +42,8 @@ Nav{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
 }
 
 nav > ul{
