@@ -37,6 +37,27 @@ body{
     max-width: 100%;
 }
 
+.whitebg{
+    background-color: var(--PureWhite);
+    padding: 4rem;
+    text-align: center;
+}
+
+.whitebg h2{
+    text-align: left;
+}
+
+.whitebg h2{
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+
+  /* hero */
+.hero{
+    padding-top: 8.5vh;
+    padding-bottom: 8.5vh;
+}
+
 
 /* header */
 
@@ -92,7 +113,14 @@ header > nav + img{
 
 /* main */
 
-.velkommen, .VDTR, .Belts, .indmeld, .instruktør{
+.velkommen, .instruktør{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 5rem;
+}
+
+.VDTR, .Belts, .indmeld{
     display: grid;
     grid-template-columns: 1fr 1.7fr 1fr;
     grid-template-rows: auto;
@@ -100,11 +128,7 @@ header > nav + img{
     padding-bottom: 5rem;
 }
 
-.velkommen p{
-    grid-column: 2;
-    grid-row: 2;
-}
-.velkommen h1, .VDTR h1, .VDTR article, .knapPOS1, .Belts, .indmeld section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a{
+.velkommen h1, .velkommen p, .VDTR h1, .VDTR article, .knapPOS1, .Belts, .indmeld section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a{
     grid-column: 2;
 }
 
@@ -172,13 +196,16 @@ span{
 }
 
 /* Instruktører */
+article.instruktør {
+    padding-top: 5rem;
+}
+
 .senseis ul{
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
     margin: auto;
-   
 }
 
 .senseis li{
@@ -315,11 +342,6 @@ width: 4rem;
 
 
 /* Cards */
-.whitebg{
-    background-color: var(--PureWhite);
-    padding: 4rem;
-    text-align: center;
-}
 .nyheder{
     display: flex;
     flex-direction: row;
@@ -330,10 +352,7 @@ width: 4rem;
 .nyhedsbokse{
    background-color: var(--MainRed);
 }
-.whitebg h2{
-    padding-bottom: 3rem;
-    font-size: 2rem;
-}
+
 .nyheder img{
     width: 400px;
 }
@@ -358,13 +377,93 @@ width: 4rem;
     padding: 0.5rem;
     
 }
-.whitebg h2{
-    text-align: left;
+
+
+
+
+/* Træning */
+
+.voksenTRÆN, .børnTRÆN{
+    display: flex;
+    justify-content: left;
+    padding: 0rem 1rem 0rem 1rem;
+    gap: 2.5rem;
 }
-  /* hero */
-.hero{
-    padding-top: 8.5vh;
-    padding-bottom: 8.5vh;
+
+.voksenTRÆN li, .børnTRÆN li{
+    list-style: none;
+}
+
+.voksenTRÆN ul, .børnTRÆN ul{
+    padding: 0;
+}
+
+.Træningstider{
+    display: flex;
+}
+
+.Træningstider > div{
+    background-color: var(--PureWhite);
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 2px 10px var(--LightGrey);
+}
+
+/* Skolen */
+.Ashimål{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.Ashimål div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* accordion */
+
+.accordion{
+    max-width: 40rem;
+    overflow: hidden;
+    background-color: var(--Mainblue);
+    margin: 1.5rem;
+}
+
+.accorLABEL, .accorITEM{
+    padding: 14px 20px;
+}
+
+.accorLABEL{
+    display: block;
+    color: var(--PureWhite);
+    /* font-weight: 700; */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accorLABEL:hover{
+    background-color: #86888d;
+}
+
+.accorITEM{
+    background-color: var(--PureWhite);
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accorINPUT{
+    display: none;
+}
+
+.accorINPUT:checked ~ .accorITEM{
+    display: block;
 }
 
 @media screen and (max-width: 440px) {
