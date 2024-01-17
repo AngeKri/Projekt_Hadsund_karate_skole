@@ -9,7 +9,10 @@
   <body>
     <header>
       <nav>
-        <img src="./assets/images/LogoMedText600px.png" alt="Hadsund karate skole logo"/>
+        <a href="./index.html"><img class="logo" src="./assets/images/LogoMedText600px.png" alt="Hadsund karate skole logo"/></a>
+        <div class="menu">
+          <label for="menu"><img src="./assets/images/bars-solid (3).svg" alt="Menu"/></label>
+        </div>
         <ul>
           <li><a href="./index.html">Forside</a></li>
           <li><a href="./Nyheder.html">Nyheder</a></li>
@@ -24,7 +27,7 @@
       <img class="hero" src="./assets/images/Desktop Hero/BælteHero.jpg" alt="Billede af torigate fra Japan"/>
     </header>
     <main>
-      <section>
+      <section class="mainGrid">
         <h1>Træning og etikette</h1>
         <article>
           <h2>Træning</h2>
@@ -36,6 +39,7 @@
         </p>
       </article>
       <article>
+        <h3>Træningstider</h3>
         <section class="Træningstider">
           <div>
             <h4>Voksne</h4>
@@ -69,7 +73,9 @@
           <p>*Træningstiden lørdag er mest beregnet til teknisk- og fysisk kamptræning. <br>
           Børn fra børneholdet har selvfølgelig også mulighed for at udnytte denne træningstid. Her sætter de selv tempoet og kan få en mere intens træning, sammen med de voksne.</p>
         </article>
-        <img src="" alt="">
+        <div class="Træning">
+          <img src="./assets/images/træningstider.jpg" alt="">
+        </div>
         <article>
         <h3>Træningselementer</h3>
         <p>Træningen i Hadsund Karate Skolen er en energifyldt oplevelse. Uanset dit erfaringsniveau inviterer vi dig ind i en verden af spændende træningselementer, herunder: </p>
@@ -130,9 +136,8 @@
         </article>
         <div>
           <h2>Kalender</h2>
-          <iframe src="https://calendar.google.com/calendar/embed?src=ashiharakaratehadsund%40gmail.com&amp;ctz=Europe/Copenhagen"></iframe>
+          <iframe class="Kalender"src="https://calendar.google.com/calendar/embed?src=ashiharakaratehadsund%40gmail.com&amp;ctz=Europe/Copenhagen"></iframe>
         </div>
-        <!-- style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no" -->
         <div>
           <h3>Vil du vide mere om Instruktørene?</h3>
           <a class="knappen" href="./Instruktører.html">Læs om instruktørerne </a>

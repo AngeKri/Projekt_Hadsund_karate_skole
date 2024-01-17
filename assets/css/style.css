@@ -120,7 +120,7 @@ header > nav + img{
     padding-bottom: 5rem;
 }
 
-.VDTR, .Belts, .indmeld{
+.Belts, .mainGrid{
     display: grid;
     grid-template-columns: 1fr 1.7fr 1fr;
     grid-template-rows: auto;
@@ -128,10 +128,13 @@ header > nav + img{
     padding-bottom: 5rem;
 }
 
-.velkommen h1, .velkommen p, .VDTR h1, .VDTR article, .knapPOS1, .Belts, .indmeld section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a{
+.velkommen h1, .velkommen p, .Belts, .mainGrid section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a, .mainGrid h1, .mainGrid article, .mainGrid h2, .mainGrid div{
     grid-column: 2;
 }
 
+.velkommen p{
+    margin: .7rem 0 .7rem 0;
+}
 
 .Belts > *{
     grid-column: 2;
@@ -141,6 +144,23 @@ header > nav + img{
     margin: auto;
     width: 41%;
     padding: 3rem 0rem 3rem 0rem;
+}
+
+.knapny{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.Træning img{
+    width: 100%;
+}
+
+.Kalender{
+    border-width: 0;
+    width: 100%;
+    height: 30rem;
+    padding: 1rem 0 1rem 0;
 }
 
 /* nyheds eksempel */
@@ -340,7 +360,6 @@ width: 4rem;
 }
 
 
-
 /* Cards */
 .nyheder{
     display: flex;
@@ -349,11 +368,29 @@ width: 4rem;
     gap: 6rem;
     text-align: left;
 }
+
+.nyhedermulti{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.5rem;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.nyhedsside{
+    padding: 0 2.5rem 0 2.5rem;
+}
+
+.nyhedsside h2{
+    padding: 2rem;
+}
+
 .nyhedsbokse{
    background-color: var(--MainRed);
 }
 
-.nyheder img{
+.nyheder img, .nyhedermulti img{
     width: 400px;
 }
 .nyhedsbokse a{
@@ -378,9 +415,6 @@ width: 4rem;
     
 }
 
-
-
-
 /* Træning */
 
 .voksenTRÆN, .børnTRÆN{
@@ -400,6 +434,7 @@ width: 4rem;
 
 .Træningstider{
     display: flex;
+    justify-content: center;
 }
 
 .Træningstider > div{
@@ -439,9 +474,7 @@ width: 4rem;
 .accorLABEL{
     display: block;
     color: var(--PureWhite);
-    /* font-weight: 700; */
     cursor: pointer;
-    position: relative;
     transition: background-color 0.1s;
     display: flex;
     justify-content: space-between;
@@ -467,15 +500,18 @@ width: 4rem;
 }
 
 @media screen and (max-width: 440px) {
-    header ul{
-display: none;
+header ul{
+    display: none;
 }
+
 .logo{
     width: 250px;
 }
+
 header{
     display: flex;
 }
+
 header a{
     order: -1;
 }
@@ -485,46 +521,57 @@ header nav{
     justify-content: space-between;
     max-width: 100%;
     position: absolute;
-    }
+}
+
 .menu{
     display: flex;
     align-items: center;
     justify-self: end;
-    
+
 }
+
 nav img{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .menu img{
     width: 32px;
 }
+
 .hero{
     width: fit-content;
     height: 290px;
     padding-bottom: 0;
     padding-top: 9.5vh;
 }
+
 .velkommen{
     display: block;
     padding: 1rem;
+}
+
+.velkommen h1, .nyhedsside{
+    padding: 0;
 }
 
 p{
     font-size: 16px;
     margin: 0;
 }
+
 body{
     display: flex;
     flex-direction: column;
 }
 
 .fep ul{
-flex-direction: column;
-justify-content: center;
-gap: 2rem   ;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem   ;
 }
+
 .fep li{
     width: 250px;
     height: 250px;
@@ -533,27 +580,32 @@ gap: 2rem   ;
     align-items: center;
     flex-direction: column;
 }
+
 .fep li img{
     padding: 0;
     width: 80px;
   text-align: center;
 }
+
 .fep h3{
     font-size: 20px;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .fep li a{
     font-size: 14px;
     margin: 0;
     padding: 0.4rem;
     width: 75%;
 }
+
 .nyheder{
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .kontakt{
     display: flex;
     justify-content: center;
@@ -563,28 +615,134 @@ gap: 2rem   ;
     width: 100%;
     gap: 1rem;
 }
+
 h1{
     font-size: 26px;
     padding: 1rem;
 }
+
 h2{
     font-size: 20px;
     padding: 1rem;
 }
+
 footer{
     padding-left: 1rem;
     flex-direction: column;
 }
+
 footer > img{
     padding: 0 6.5rem 0;
 }
+
 .Belts{
- display: block;
+    display: block;
 }
+
 .Belts img{
-width: 100%;
-padding: 0;
+    width: 100%;
+    padding: 0;
 }
+
+.Belts h1{
+    font-size: 26px;
+    padding: 0 0 0 1rem;
+}
+
+.Belts h2{
+    font-size: 20px;
+}
+
+.Belts p{
+    padding: 1rem;
+}
+
+.Træningstider{
+    flex-wrap: wrap;
+}
+
+/* .senseis{
+    display: flex;
+    flex-direction: column;
+} */
+
+.senseis ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+
+.senseis li{
+    padding: 0;
+    max-width: 100%;
+}
+
+.senseis li > p{
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.senseis img{
+    object-fit: cover;
+    height: 250px;
+    object-position: top;
+}
+
+.Ashimål{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.mainGrid, .instruktør{
+    display: block;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.mainGrid h1, .instruktør h1{
+    font-size: 26px;
+    padding: 0 0 1rem 0;
+}
+
+.Skoleimg{
+    max-width: 100%;
+}
+
+.Skoleknap{
+    margin-bottom: 3rem;
+}
+
+.mainGrid h2,  .mainGrid h3, .instruktør h2{
+    padding: 1rem 0 1rem 0;
+}
+
+.mainGrid p{
+    padding-bottom: 1rem;
+}
+
+.mainGrid ul{
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.instruktør:nth-last-child(2) p{
+    padding: .5rem;
+}
+
+div.instruktør{
+    display: flex;
+    justify-content: center;
+}
+
+article.instruktør{
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.whitebg{
+    padding: 4rem 0 4rem 0;
+}
+
 .knapPOS1{
     text-align: center;
     width: auto;
@@ -592,35 +750,17 @@ padding: 0;
     padding: 0;
     padding-bottom: 1rem;
 }
-.breadcrumb{
+
+.breadcrumb, .nyhedsside h2{
     padding: 1rem;
 }
-.Belts h1{
-    font-size: 26px;
-    padding: 0 0 0 1rem;
-}
-.Belts h2{
-    font-size: 20px;
-}
-.Belts p{
-    padding: 1rem;
-}
-.indmeld{
-    display: block;
-    padding: 1rem 1rem 2rem 1rem;
-}
-.indmeld h1{
-    font-size: 26px;
-    padding: 0 0 1rem 0;
-}
-.indmeld h2{
-    padding: 1rem 0 1rem 0;
-}
+
 .knapPos2{
     display: flex;
     justify-content: center;
     margin: 1.5rem;
 }
+
 .knapPos2 a{
     margin: 0;
 }
