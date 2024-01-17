@@ -369,3 +369,71 @@ width: 4rem;
 }
 
 
+/* Træning */
+
+.voksenTRÆN, .børnTRÆN{
+    display: flex;
+    justify-content: left;
+    padding: 0rem 1rem 0rem 1rem;
+    gap: 2.5rem;
+}
+
+.voksenTRÆN li, .børnTRÆN li{
+    list-style: none;
+}
+
+.voksenTRÆN ul, .børnTRÆN ul{
+    padding: 0;
+}
+
+.Træningstider{
+    display: flex;
+}
+
+.Træningstider > div{
+    background-color: var(--PureWhite);
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 2px 10px var(--LightGrey);
+}
+
+
+/* accordion */
+
+.accordion{
+    max-width: 400px;
+    overflow: hidden;
+    background-color: var(--Mainblue);
+}
+
+.accorLABEL, .accorITEM{
+    padding: 14px 20px;
+}
+
+.accorLABEL{
+    display: block;
+    color: var(--PureWhite);
+    /* font-weight: 700; */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+
+.accorLABEL:hover{
+    background-color: #86888d;
+}
+
+.accorITEM{
+    background-color: var(--PureWhite);
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accorINPUT{
+    display: none;
+}
+
+.accorINPUT:checked ~ .accorITEM{
+    display: block;
+}
