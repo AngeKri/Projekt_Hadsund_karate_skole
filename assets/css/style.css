@@ -368,7 +368,7 @@ width: 4rem;
 }
 
 @media screen and (max-width: 440px) {
-header ul{
+    header ul{
 display: none;
 }
 .logo{
@@ -441,8 +441,8 @@ gap: 2rem   ;
 }
 .fep h3{
     font-size: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .fep li a{
     font-size: 14px;
@@ -465,7 +465,12 @@ gap: 2rem   ;
     gap: 1rem;
 }
 h1{
-    margin-bottom: 1rem;
+    font-size: 26px;
+    padding: 1rem;
+}
+h2{
+    font-size: 20px;
+    padding: 1rem;
 }
 footer{
     padding-left: 1rem;
@@ -473,5 +478,32 @@ footer{
 }
 footer > img{
     padding: 0 6.5rem 0;
+}
+.Belts{
+ display: block;
+}
+.Belts img{
+width: 100%;
+padding: 0;
+}
+.knapPOS1{
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+.breadcrumb{
+    padding: 1rem;
+}
+.Belts h1{
+    font-size: 26px;
+    padding: 0 0 0 1rem;
+}
+.Belts h2{
+    font-size: 20px;
+}
+.Belts p{
+    padding: 1rem;
 }
 }
