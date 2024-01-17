@@ -89,7 +89,7 @@ header > nav + img{
 
 /* main */
 
-.velkommen, .VDTR, .Belts, .indmeld, .instruktør{
+.velkommen, .VDTR, .Belts, .indmeld, .instruktør, .skolen{
     display: grid;
     grid-template-columns: 1fr 1.7fr 1fr;
     grid-template-rows: auto;
@@ -101,7 +101,7 @@ header > nav + img{
     grid-column: 2;
     grid-row: 2;
 }
-.velkommen h1, .VDTR h1, .VDTR article, .knapPOS1, .Belts, .indmeld section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a{
+.velkommen h1, .VDTR h1, .VDTR article, .knapPOS1, .Belts, .indmeld section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a, .skolen article, .skolen h1, .skolen div, .skolen section{
     grid-column: 2;
 }
 
