@@ -15,14 +15,20 @@
     --CreamWhite: #EEEDE8;
     --PureWhite: #F5F5F5; 
     --LightGrey: #434242;
-    --Overskrift: 3.5rem;
-    --Undertitel: 1.8rem;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lato', sans-serif;
     text-wrap: balance;
     margin: 0rem;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
 }
 
 p{
@@ -125,7 +131,7 @@ header > nav + img{
     grid-template-columns: 1fr 1.7fr 1fr;
     grid-template-rows: auto;
     row-gap: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .velkommen h1, .velkommen p, .Belts, .mainGrid section, .instruktør h1, .instruktør p, .instruktør h2,  .instruktør a, .mainGrid h1, .mainGrid article, .mainGrid h2, .mainGrid div{
@@ -152,8 +158,15 @@ header > nav + img{
     padding-bottom: 3rem;
 }
 
-.Træning img{
-    width: 100%;
+.Dividerimg{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.Dividerimg img{
+    width: 46%;
+    height: auto;
 }
 
 .Kalender{
@@ -661,10 +674,10 @@ footer > img{
     flex-wrap: wrap;
 }
 
-/* .senseis{
-    display: flex;
-    flex-direction: column;
-} */
+.Dividerimg img{
+    width: 100%;
+    height: auto;
+}
 
 .senseis ul{
     display: flex;
