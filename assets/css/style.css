@@ -401,9 +401,10 @@ width: 4rem;
 /* accordion */
 
 .accordion{
-    max-width: 400px;
+    max-width: 40rem;
     overflow: hidden;
     background-color: var(--Mainblue);
+    margin: 1.5rem;
 }
 
 .accorLABEL, .accorITEM{
@@ -417,6 +418,8 @@ width: 4rem;
     cursor: pointer;
     position: relative;
     transition: background-color 0.1s;
+    display: flex;
+    justify-content: space-between;
 }
 
 .accorLABEL:hover{
