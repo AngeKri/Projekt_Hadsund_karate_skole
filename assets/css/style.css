@@ -472,6 +472,6 @@ footer{
     flex-direction: column;
 }
 footer > img{
-    padding: 7rem;
+    padding: 0 6.5rem 0;
 }
 }
